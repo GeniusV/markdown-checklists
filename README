@@ -43,7 +43,25 @@ h1>Hello World</h1>
 
 *installs the extension to the current user.*
 
-    $ make OmniMarkupPreviewerInstall
+``` bash
+git clone https://github.com/GeniusV/markdown-checklists
+cp markdown_checklists/extension.py '~/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupLib/Renderers/libs/mdx_checklists.py'
+cp markdown_checklists/checklists.css '~/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/public/checklists.css'
+```
+
+add following html to your template file. By default, it is `~/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/templates/github.tpl`.
+``` html
+  <link rel="stylesheet" type="text/css" href="/public/checklists.css">
+```
+
+Finally, enable `checklists` in your `OmniMarkupPreviewer.sublime-settings`:
+``` json
+{
+    "renderer_options-MarkdownRenderer": {
+        "extensions": ["checklists"]
+    }
+}
+```
 
 ## Usage
 
