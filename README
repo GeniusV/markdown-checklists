@@ -46,8 +46,6 @@ h1>Hello World</h1>
 ``` bash
 git clone https://github.com/GeniusV/markdown-checklists
 cd markdown-checklists
-=======
->>>>>>> origin/master
 cp markdown_checklists/extension.py '~/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/OmniMarkupLib/Renderers/libs/mdx_checklists.py'
 cp markdown_checklists/checklists.css '~/Library/Application Support/Sublime Text 3/Packages/OmniMarkupPreviewer/public/checklists.css'
 ```
